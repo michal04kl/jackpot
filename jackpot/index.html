@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl-Pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maszyna losująca</title>
+    <script type="text/javascript" src="gamble.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="set">
+        <form id="fset">
+            <input type="number" id="bal" autocomplete="off" step="0.01" placeholder="wprowadź balans"><br>
+            <input type="submit" value="rozpocznij" id="send">
+        </form>
+    </div>
+    <div id="game">
+        <div id="bln"><h3>Twój balans:</h3><h1 id="balans"></h1></div>
+    <table id="ekran">
+        <tr id="row1"><td id="r00" class="pole"></td><td id="r01" class="pole"></td><td id="r02" class="pole"></td></tr>
+        <tr id="row2"><td id="r10" class="pole"></td><td id="r11" class="pole"></td><td id="r12" class="pole"></td></tr>
+        <tr id="row3"><td id="r20" class="pole"></td><td id="r21" class="pole"></td><td id="r22" class="pole"></td></tr>
+    </table>
+    <div id="inp">
+    <form id="coin">
+        <h3>Losuj za:</h3>
+        <input type="radio" name="coin" class="coin" value="5">5<br>
+        <input type="radio" name="coin" class="coin" value="10">10<br>
+        <input type="radio" name="coin" class="coin" value="25">25<br>
+        <input type="radio" name="coin" class="coin" value="50">50<br>
+        <input type="radio" name="coin" class="coin" value="100">100<br>
+        <input type="radio" name="coin" class="coin" value="ai">all in
+    </form>
+    <button id="start" onclick="losuj()">GRAJ</button>
+    </div>
+</div>
+</body>
+</html>

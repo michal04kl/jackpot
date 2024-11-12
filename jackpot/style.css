@@ -1,0 +1,170 @@
+#game{
+    display: none;
+    color: red;
+    width: 40%;
+    height: 60%;
+
+    flex-direction: column;
+}
+.ran::after{
+    content:"";
+animation: change 0.6s infinite;
+}
+@keyframes change{
+    0%{content:"$";}
+    10%{content:"#";}
+    20%{content:"@";}
+    30%{content:"!";}
+    40%{content:"&";}
+    50%{content:"$";}
+    60%{content:"#";}
+    70%{content:"@";}
+    80%{content:"!";}
+    90%{content:"&";}
+    100%{content:"@";}
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+}
+#ekran{
+    border: 5px solid #95822c;  
+    width: 100%;
+    min-height: 60%;
+    display: flex; 
+}
+#ekran tbody{
+    width: 100%;
+    height: 100%;
+}
+#row2{
+    border-top: 5px solid #95822c;  
+    border-bottom:5px solid #95822c;
+}
+#r01, #r11, #r21{
+    border-left: 3px solid #ae0909;
+    border-right:3px solid #ae0909;
+}
+tr{
+    width: 100%;
+    height: 32%;
+    text-align: center;
+    font-size: 210%;
+    display: flex;
+    font-weight: bold;
+    justify-content: space-evenly
+}
+td{
+    width: 33%;
+    height: 99%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.luck{
+    animation: glow 2s infinite;
+}
+@keyframes glow{
+    0%{box-shadow: none;}
+    25% {box-shadow: inset 0px 0px 20px gold;}
+    50%{box-shadow: none;}
+    75% {box-shadow: inset 0px 0px 20px gold;}
+    100%{box-shadow: none;}
+}
+#bln{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#balans{
+    color: gold;
+}
+#inp{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center
+}
+.down{
+    animation: down 2s ease-out;
+}
+@keyframes down{
+    0%{
+        text-shadow: none;
+        color: gold;
+    }
+    50%{
+        text-shadow:  0px 0px 10px #FF0F00;
+        color:red;
+    }
+    100%{
+        text-shadow: none;
+        color: gold;
+    }
+}
+.up{
+    animation: up 2s ease-out;
+}
+@keyframes up{
+    0%{
+        text-shadow: none;
+        color: gold;
+    }
+    50%{
+        text-shadow:  0px 0px 10px #00ff0f;
+        color:greenyellow;
+    }
+    100%{
+        text-shadow: none;
+        color: gold;
+    }
+}
+#fset{
+    color: red;
+}
+#start{
+    background-color: #ae0909;
+    border: 1px solid #FF0F00;
+    font-weight: bold;
+}
+#start:hover{
+background-color:#610505 ;
+color: #ae0909;
+}
+#fset{
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+}
+#bal{
+    text-align: center;
+    background-color: #ae0909;
+    color:#000000;
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+#send{
+border: 1px solid #FF0F00;
+background-color: #ae0909;
+font-weight: bold;
+}
+#send:hover{
+    background-color: #610505;
+    color: #ae0909;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+  
